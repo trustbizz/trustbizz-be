@@ -1,19 +1,19 @@
 module.exports = [
-  "strapi::errors",
-  "strapi::security",
+  'strapi::errors',
+  'strapi::security',
   {
-    name: "strapi:cors",
+    name: 'strapi::cors',
     config: {
       enabled: true,
-      headers: "*",
-      origin: ["http://localhost:1337", "http://trustbizz.me", "http://localhost:3000", "http://trustbizz"],
-    },
+      header: '*',
+      origin: ['http://localhost:8080']
+    }
   },
-  "strapi::poweredBy",
-  "strapi::logger",
-  "strapi::query",
-  "strapi::body",
-  "strapi::session",
-  "strapi::favicon",
-  "strapi::public",
+  'strapi::poweredBy',
+  'strapi::logger',
+  'strapi::query',
+  'strapi::body',
+  'strapi::session',
+  'strapi::favicon',
+  'strapi::public',
 ];
